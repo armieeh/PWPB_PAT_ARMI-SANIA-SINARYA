@@ -20,8 +20,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('login', [AuthController::class, 'index']);
-Route::get('registers', [AuthController::class, 'register']);
 Route::resource('/students', StudentController::class);
 /*
 |--------------------------------------------------------------------------
@@ -29,8 +27,10 @@ Route::resource('/students', StudentController::class);
 |--------------------------------------------------------------------------
 */
 Route::group(['middleware' => ['guest']], function(){
-    Route::post('/loginpost', [AuthController::class, 'Authenticate']);
-    Route::post('registerpost', [AuthController::class, 'store']);
+    Route::get('/login', [AuthController::class, 'index']);
+    Route::post('/login', [AuthController::class, 'Authenticate']);
+    Route::get('/register', [AuthController::class, 'register']);
+    Route::post('/register', [AuthController::class, 'store']);
     
 });
 /*

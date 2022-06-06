@@ -20,7 +20,7 @@
                                 <h3 class="mb-4">Halaman Login!</h3>
                             </div>
                         </div>
-                        <form action="/loginpost" method="POST" class="signin-form">
+                        <form action="/login" method="POST" class="signin-form">
                             @csrf
                             <div class="form-group mb-3">
                                 <label class="label" for="Email">Email</label>
@@ -29,7 +29,7 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label class="label" for="password">Password</label>
-                                <input type="password" name="password" class="form-control" placeholder="Password"
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Password"
                                     required>
                             </div>
                             <div class="form-group">
@@ -39,7 +39,7 @@
                             <div class="form-group d-md-flex">
                             </div>
                         </form>
-                        <p class="text-center">Belum Punya Akun? <a href="register">Daftar!</a></p>
+                        <p class="text-center">Belum Punya Akun? <a href="/register">Daftar!</a></p>
                     </div>
                 </div>
             </div>

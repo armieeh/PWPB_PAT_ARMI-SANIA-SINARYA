@@ -79,7 +79,7 @@
                             <div class="form-group d-md-flex">
                             </div>
                         </form>
-                        <p class="text-center">Sudah Punya Akun? <a href="login">Login!</a></p>
+                        <p class="text-center">Sudah Punya Akun? <a href="/login">Login!</a></p>
                     </div>
                 </div>
             </div>

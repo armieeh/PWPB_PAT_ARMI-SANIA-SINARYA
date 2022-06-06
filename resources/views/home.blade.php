@@ -42,8 +42,8 @@
             </ol>
         </div>
 
-        <a href='registers'><button type="submit">Register</button></a>
-        <a href='login'><button type="submit">Login</button></a>
+        <a href='/register'><button type="submit">Register</button></a>
+        <a href='/login'><button type="submit">Login</button></a>
     </div>
     
 </body>
